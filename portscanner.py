@@ -23,7 +23,7 @@ t1 = datetime.now()
 # Using the range function to specify ports (here it will scans all ports between 1 and 1024
 # there can also be some errors
 try:
-    for port in range(1, 21):
+    for port in range(1, 1024):
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         result = sock.connect_ex((remote_server_ip, port))
 
